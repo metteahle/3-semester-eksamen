@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="supermarket.css">
+</head>
+<body>
+
+    <div class="zoom">
+       <img src="images/rightshelf.png" alt="supermarketshelf" id="layer2" style="width: 50%; margin-top: 180px; margin-left: 50%;" >
+       <img src="images/leftshelf.png" alt="supermarketshelf" id="layer1" style="width: 50%; margin-top: 180px; margin-right: 50%;" >
+    </div>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta, odit voluptates similique totam, 
+            iusto doloremque ullam officiis debitis sapiente quod, quidem aperiam provident fuga hic. Rerum ipsa aperiam impedit!
+        </p>
+    </div>
+    
+
+    <script>
+        var layer2 = document.getElementById('layer2')
+        
+        document.addEventListener('scroll', 
+        function(e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (50 + scroll/10) + '%';
+            layer2.style.marginLeft = 50 + '%';
+            layer2.style.left = scroll/5 + '%';
+        });
+
+        document.addEventListener('scroll', 
+        function(e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (50 + scroll/10) + '%';
+            layer1.style.marginright = 50 + '%';
+            layer1.style.right = scroll/5 + '%';
+        });
+    </script>
+</body>
+</html>
